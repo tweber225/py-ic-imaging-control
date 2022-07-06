@@ -45,7 +45,7 @@ class IC_ImagingControl:
         
         return self._unique_device_names
     
-    def get_device(self, unique_device_name):
+    def get_device(self, unique_device_name) -> IC_Camera:
         """
         Gets camera device object based on unique name string.
         Will create one only if it doesn't already exist.
